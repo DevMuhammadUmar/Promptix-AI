@@ -3,26 +3,27 @@ import { assets } from "../assets/assets"
 const Testimonial = () => {
     const dummyTestimonialData = [
         {
-            image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200",
-            name: 'John Doe',
-            title: 'Marketing Director, TechCorp',
-            content: 'ContentAI has revolutionized our content workflow. The quality of the articles is outstanding, and it saves us hours of work every week.',
-            rating: 1,
+            image: "https://images.unsplash.com/photo-1680066218162-2c0fdbe6f7a9?q=80&w=385&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            name: 'Ahmed Hassan',
+            title: 'Digital Marketing Manager, Karachi',
+            content: 'The article generator and title creator have transformed our content strategy. We can now produce engaging blog posts for our clients in minutes instead of hours.',
+            rating: 5,
         },
         {
-            image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200",
-            name: 'Jane Smith',
-            title: 'Content Creator, TechCorp',
-            content: 'ContentAI has made our content creation process effortless. The AI tools have helped us produce high-quality content faster than ever before.',
-            rating: 3,
+            image: "https://images.unsplash.com/photo-1723831005305-7046e0e9d34b?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            name: 'Fatima Sheikh',
+            title: 'Graphic Designer, Lahore',
+            content: 'The background remover and object remover tools are incredible! They have streamlined my design workflow and helped me deliver projects faster to my clients.',
+            rating: 5,
         },
         {
-            image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop",
-            name: 'David Lee',
-            title: 'Content Writer, TechCorp',
-            content: 'ContentAI has transformed our content creation process. The AI tools have helped us produce high-quality content faster than ever before.',
-            rating: 2,
+            image: "https://images.unsplash.com/photo-1637589274742-8d4c152720a2?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            name: 'Muhammad Ali',
+            title: 'HR Manager, Islamabad',
+            content: 'The resume review feature is a game-changer for our recruitment process. It helps us quickly identify the best candidates and saves hours of manual screening.',
+            rating: 4,
         },
+       
     ]
 
     return (
@@ -40,7 +41,7 @@ const Testimonial = () => {
                         <p className='text-gray-500 text-sm my-5'>"{testimonial.content}"</p>
                         <hr className='mb-5 border-gray-300' />
                         <div className='flex items-center gap-4'>
-                            <img src={testimonial.image} className='w-12 object-contain rounded-full' alt='' />
+                            <img src={testimonial.image} className='w-12 h-12 object-cover rounded-full' alt='' />
                             <div className='text-sm text-gray-600'>
                                 <h3 className='font-medium'>{testimonial.name}</h3>
                                 <p className='text-xs text-gray-500'>{testimonial.title}</p>
